@@ -6,4 +6,4 @@ before_install:
     - docker build -t agavric/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run agavric/docker-react npm run test -- --coverage
+    - docker run -e CI=true agavric/docker-react npm run test
