@@ -10,6 +10,6 @@ test('renders learn react link', () => {
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/thghere/i);
+  const linkElement = getByText(/there/i);
   expect(linkElement).toBeInTheDocument();
 });
